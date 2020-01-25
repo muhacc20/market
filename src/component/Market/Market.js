@@ -3,11 +3,12 @@ import './App.css'
 export default function Market(props) {
     return (
        
-            <div className='basic'>
+            <div className='basic'> <a href={props.link}>
                 <img src={props.imgUrl} title={props.title} />
                 <p className="col">{props.title} </p>
-                <h2>{props.price}</h2>
-                
+                <p>{props.price}</p>
+    <p class="discount">{props.discout}</p>
+                </a>
 
 
             </div>
